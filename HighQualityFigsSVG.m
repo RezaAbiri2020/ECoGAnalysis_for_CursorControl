@@ -1,4 +1,4 @@
-function HighQualityFigs(name)
+function HighQualityFigsSVG(name)
 % Defaults for this blog post
 
 %For generating the target figure size
@@ -23,5 +23,5 @@ myfiguresize = [left, bottom, width, height];
 set(gcf,'PaperPosition', myfiguresize);
 
 % Save the file as PNG
-print(['./',name],'-dpng','-r300');
+print(['./',name],'-dsvg','-r300');
 end
